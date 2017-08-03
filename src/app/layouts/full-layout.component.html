@@ -1,0 +1,57 @@
+<header class="app-header navbar">
+  <button class="navbar-toggler d-lg-none" type="button" appMobileSidebarToggler>&#9776;</button>
+  <a class="navbar-brand" href="#"></a>
+  <ul class="nav navbar-nav mr-auto d-md-down-none">
+    <li class="nav-item">
+      <a class="nav-link navbar-toggler" appSidebarToggler>&#9776;</a>
+    </li>
+  </ul>
+</header>
+
+<div class="app-body">
+  <div class="sidebar">
+    <nav class="sidebar-nav">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" [routerLink]="['/portfolio']">
+            <i class="icon-briefcase"></i> Portfolio
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" [routerLink]="['/strategy']">
+            <i class="icon-bulb"></i> Strategy
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" [routerLink]="['/users']">
+            <i class="icon-people"></i> User management
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" [routerLink]="['/dashboard']">
+            <i class="icon-speedometer"></i> Dashboard <span class="badge badge-info">NEW</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Main content -->
+  <main class="main">
+
+    <!-- Breadcrumb -->
+    <ol class="breadcrumb">
+      <app-breadcrumbs></app-breadcrumbs>
+    </ol>
+
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+</div>
+
+<footer class="app-footer">
+  <a href="http://www.qlovr.com/">Bot Trader</a> &copy; 2017 QlovrLabs.
+  <span class="float-right">Powered by <a href="http://www.qlovr.com">Qlovr</a>
+    </span>
+</footer>

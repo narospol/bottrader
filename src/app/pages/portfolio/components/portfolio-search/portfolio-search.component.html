@@ -1,0 +1,70 @@
+<tabset>
+  <tab>
+    <ng-template tabHeading><i class="fa fa-search"></i> Search</ng-template>
+    <div class="container">
+      <form class="form-horizontal">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group row">
+              <label class="col-md-4 form-control-label text-right" for="name">Name</label>
+              <div class="col-md-8">
+                <input type="text" id="name" name="name" class="form-control" placeholder="Text">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group row">
+              <label class="col-md-4 form-control-label text-right" for="status">Status</label>
+              <div class="col-md-8">
+                <select id="status" name="status" class="form-control">
+                  <option value="0">Please select</option>
+                  <option value="1">Option #1</option>
+                  <option value="2">Option #2</option>
+                  <option value="3">Option #3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group row">
+              <label class="col-md-4 form-control-label text-right" for="accountNo">Account No.</label>
+              <div class="col-md-8">
+                <input type="text" id="accountNo" name="accountNumber" class="form-control" placeholder="Account Number">
+                <span *ngIf="false" class="help-block">This is a help text</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group row">
+              <label class="col-md-4 form-control-label text-right" for="strategy">Strategy.</label>
+              <div class="col-md-8">
+                <input type="text" id="strategy" name="strategy" class="form-control" placeholder="Strategy">
+                <span *ngIf="false" class="help-block">This is a help text</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <div class="form-group pull-right">
+              <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-search"></i> Search</button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </form>
+
+    </div>
+  </tab>
+</tabset>
